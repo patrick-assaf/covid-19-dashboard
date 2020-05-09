@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { Cards, Chart, CountrySelector } from './components';
+import styles from './App.module.css';
 
 class App extends Component {
 
     render() {
         return(
-            <div>
+            <div className={styles.container}>
                 <Cards />
                 <CountrySelector />
                 <Chart />
