@@ -2,7 +2,6 @@ import React from 'react';
 import { fetchDailyData } from '../../api';
 import { Line, Bar } from 'react-chartjs-2';
 import styles from './Chart.module.css';
-import { StylesProvider } from '@material-ui/core';
 
 const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
     const [dailyData, setDailyData] = React.useState([]);
