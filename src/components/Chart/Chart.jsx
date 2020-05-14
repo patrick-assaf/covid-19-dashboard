@@ -1,7 +1,7 @@
 import React from 'react';
 import { fetchDailyData } from '../../api';
 import { Line, Bar } from 'react-chartjs-2';
-import style from './Chart.module.css';
+import styles from './Chart.module.css';
 import { StylesProvider } from '@material-ui/core';
 
 const Chart = () => {
@@ -37,7 +37,7 @@ const Chart = () => {
     )
 
     return (
-        <div className={StylesProvider.container}>
+        <div className={styles.container}>
             {lineChart}
         </div>
     )
