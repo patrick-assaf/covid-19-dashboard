@@ -16,7 +16,9 @@ class App extends Component {
     }
 
     handleCountryChange = async (country) => {
-        console.log(country);
+        const fetchedData = await fetchData(country);
+
+        console.log(fetchedData);
     }
 
     render() {
